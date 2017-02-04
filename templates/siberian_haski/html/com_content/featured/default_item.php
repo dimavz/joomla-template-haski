@@ -41,6 +41,17 @@ $info    = $this->item->params->get('info_block_position', 0);
 
 <?php endif; ?>
 
+<?php if ($params->get('show_category')): ?>
+	<div class="post_category">
+		<span>
+		<img src="<?php echo JUri::base() .'templates/'.$template.'/images/content/article/icons_metainfo/zakladka.png' ?>" width="24px" height="24px"> 
+			<?php $url = '<a href="' . JRoute::_(ContentHelperRoute::getCategoryRoute($this->item->catslug)) . '">' . $this->item->category_title . '</a>'; ?>
+					<?php echo JText::sprintf('COM_CONTENT_CATEGORY', $url); ?>
+			</a>
+		</span>
+	</div><!-- end class="post_category" -->
+<?php endif; ?>
+
 <?php if ($this->item->state == 0) : ?>
 	<span class="label label-warning"><?php echo JText::_('JUNPUBLISHED'); ?></span>
 <?php endif; ?>
