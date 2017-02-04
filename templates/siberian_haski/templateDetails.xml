@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="template">
+	<name>SIBERIAN_HASKI</name>
+	<version>1.0.0</version>
+	<creationDate>12.01.2017</creationDate>
+	<author>Dmitry Zatulenka</author>
+	<authorMail>zatulenko@gmail.com</authorMail>
+	<authorUrl>http://pro-haski.com</authorUrl>
+	<copyright>Copyright (C) Siberian Haski</copyright>
+	<license>TPL_SIBERIAN_HASKI_LICENCE</license>
+	<description>TPL_SIBERIAN_HASKI_DESCRIPTION</description>
+	
+	<files>
+		
+		<folder>css</folder>
+		<folder>fonts</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>libs</folder>
+		
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		
+	</files>
+	
+	<positions>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>position-15</position>
+	</positions>
+	
+	<languages folder="language">
+        <language tag="ru-RU">ru-RU/ru-RU.tpl_siberian_haski.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.tpl_siberian_haski.sys.ini</language>
+        
+		<language tag="en-GB">en-GB/en-GB.tpl_siberian_haski.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_siberian_haski.sys.ini</language>
+	</languages>
+	
+	<config>		
+		<fields name="params">
+			<fieldset name="advanced">
+			
+				<field name="site_logo" 
+					type="media" 
+					label="TPL_SIBERIAN_HASKI_FIELD_SITELOGO" 
+					description="TPL_SIBERIAN_HASKI_FIELD_SITELOGO_DESC">
+				</field>
+				
+				<field name="site_name" 
+					type="text" 
+					label="TPL_SIBERIAN_HASKI_FIELD_SITENAME" 
+					description="TPL_SIBERIAN_HASKI_FIELD_SITENAME_DESC">
+				</field>
+				
+				<field name="site_desc" 
+					type="textarea" 
+					label="TPL_SIBERIAN_HASKI_FIELD_SITEDESC" 
+					description="TPL_SIBERIAN_HASKI_FIELD_SITEDESC_DESC">
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>

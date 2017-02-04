@@ -1,0 +1,372 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.logo_text{
+		display: block;
+		float: left;
+		margin-top: -55px;
+		width: 705px;
+		height: 250px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.logo_text{
+		display: block;
+		float: left;
+		margin-top: -55px;
+		width: 485px;
+		height: 250px;
+	}
+
+	.footer_left_block h3{
+		display: block;
+		padding: 15px;
+		border: 1px solid;
+		height: 80px;
+	}
+
+	.footer_left_block h3:hover {
+		background-color: #31B0D5;
+		color: #fff;
+	}
+
+	.footer_left_block ul{
+		display: none;
+	}
+	
+	.footer_center_block {
+  text-align: left;
+	}
+
+	.footer_center_block h3{
+		display: block;
+		padding: 15px;
+		border: 1px solid;
+		height: 80px;
+	}
+
+	.footer_center_block h3:hover{
+		background-color: #31B0D5;
+		color: #fff;
+	}
+
+	.rec_content{
+		display: none;
+	}
+
+	.footer_right_block {
+  width: 100%;
+	}
+
+	
+	.footer_right_block h3{
+		display: block;
+		padding: 15px;
+		border: 1px solid;
+		height: 80px;
+	}
+
+	.footer_right_block h3:hover{
+		background-color: #31B0D5;
+		color: #fff;
+	}
+
+	.contacts_content{
+		display: none;
+	}
+
+	.footer_subscribe form{
+	margin-left: 0px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.logo_text{
+		display: block;
+		float: left;
+		margin-top: 0px;
+		width: 250px;
+		height: 250px;
+	}
+
+	.top_links{
+		display: none;
+		background-color: #585d61;
+		padding: 10px;
+		vertical-align: middle;
+		position: absolute;
+		width: 320px;
+		margin-left:-22px;
+		margin-top: 1px;
+	}
+	.main_menu ul{
+		display: none;
+		position: absolute;
+		margin-top: 40px;
+		background-color: #3797BF;
+		z-index: 11;
+		width: 100%;
+	}
+
+	.main_menu ul li{
+		display: block;
+		float: none;
+		background-color: #3797BF;
+		z-index: 10;
+	}
+
+	.greeting{
+		text-align: center;
+	}
+	.logo_title{
+		text-align: center;
+	}
+	.logo_img{
+		text-align: center;
+	}
+
+	.footer_left_block h3{
+		height: 50px;
+	}
+
+	.footer_center_block h3{
+		height: 50px;
+	}
+
+	.footer_right_block h3{
+		height: 50px;
+	}
+
+	.footer_left_block a{
+		display: block;
+	}
+	
+}
+
+/* Для настройки отображения навигатора страниц */
+@media only screen and (max-width : 580px) {
+	
+	.pages ul li a.start {
+		border: 1px solid grey;
+		border-radius: 15px 0 0 15px;
+		color: #fff;
+		display: block;
+		font-size: 14px;
+		padding: 5px;
+		text-align: center;
+		width: 30px;
+	}
+
+	.pages ul li a{
+		display: block;
+		background-color: #43484C;
+		padding: 5px;
+		text-align: center;
+		color: #fff;
+		border: 1px solid grey;
+		font-size: 14px;
+		width: 30px;
+	}
+
+	.pages ul li a.active{
+	color: yellow;
+	background-color:#000;
+	border: 1px solid yellow;
+}
+
+	.pages ul li a.end {
+		display: block;
+		background-color: #43484C;
+		padding: 5px;
+		text-align: center;
+		color: #fff;
+		border: 1px solid grey;
+		font-size: 14px;
+		width: 30px;
+		border-radius: 0 15px 15px 0;
+	}
+
+	.pages ul li a:hover{
+		text-decoration: none;
+		color: yellow;
+		background-color:#000;
+		border: 1px solid yellow;
+	}
+}
+
+/* Для настройки отображения логотипа */
+@media only screen and (max-width : 545px) {
+
+	.main_menu ul li{
+		background-color: #3797bf;
+		display: block;
+		float: none;
+		margin-left: 10px;
+		z-index: 10;
+	}
+
+	.logo_text{
+		display: block;
+		float: left;
+		margin-top: 0px;
+		width: 100%;
+		height: 250px;
+	}
+
+	.greeting{
+		text-align: center;
+	}
+	.logo_title{
+		text-align: center;
+	}
+	.logo_img{
+		width: 100%;
+		text-align: center;
+	}
+
+	.block_sidebar .col-xs-6{
+		width: 100%;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.logo_text{
+		display: block;
+		float: left;
+		margin-top: 0px;
+		width: 100%;
+		height: 250px;
+		margin: 0 auto;
+	}
+
+	.greeting{
+		text-align: center;
+	}
+	.logo_title{
+		text-align: center;
+	}
+	.logo_img{
+		width: 100%;
+		text-align: center;
+	}
+
+}
+
+/* Изменение размеров панели навигации страниц */
+@media only screen and (max-width : 396px) {
+
+	.pages ul li{
+		padding: 0px;
+	}
+	
+	.pages ul li a.start {
+		border: 1px solid grey;
+		border-radius: 5px 0 0 5px;
+		display: block;
+		font-size: 12px;
+		padding: 5px;
+		text-align: center;
+		width: 28px;
+	}
+
+	.pages ul li a{
+		display: block;
+		background-color: #43484C;
+		padding: 5px;
+		border: 1px solid grey;
+		font-size: 12px;
+		width: 28px;
+	}
+
+	.pages ul li a.active{
+	color: yellow;
+	background-color:#000;
+	border: 1px solid yellow;
+}
+
+	.pages ul li a.end {
+		display: block;
+		background-color: #43484C;
+		padding: 5px;
+		border: 1px solid grey;
+		font-size: 12px;
+		width: 28px;
+		border-radius: 0 5px 5px 0;
+	}
+
+	.pages ul li a:hover{
+		text-decoration: none;
+		color: yellow;
+		background-color:#000;
+		border: 1px solid yellow;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.post_image img{
+		max-width: 230px;
+		max-height: 200px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+
+	.post_metainfo li{
+		display: block;
+		float: none;
+		margin: 0 auto;
+		font-size: 0.85em;
+		line-height: 2.1em;
+	}
+}
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.top_links{
+		display: inline-block !important;
+	}
+	.main_menu ul{
+		display: inline-block !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+		.footer_left_block ul{
+		display: block !important;
+	}
+
+	.rec_content{
+		display: block !important;
+	}
+
+	.contacts_content{
+		display: block !important;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
