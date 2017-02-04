@@ -155,17 +155,6 @@ if ($doc->countModules('position-7'))
 									<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Меню
 								</button>							
 								<jdoc:include type="modules" name="position-5" style="top_menu" />
-							<!-- <ul>
-								<li><a href="" title="Главная">
-									<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-								</a></li>
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Каталог Хаски</a></li>
-								<li><a href="#">Объявления</a></li>
-								<li><a href="#">Полезное</a></li>
-								<li><a href="#">Питомники</a></li>
-								<li><a href="#">Клубы</a></li>
-							</ul> -->
 						</nav>
 					<?php endif;?>
 					</div>
