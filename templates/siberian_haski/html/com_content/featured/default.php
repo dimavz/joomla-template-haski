@@ -80,13 +80,18 @@ JHtml::_('behavior.caption');
 <?php endif; ?>
 
 <?php if ($this->params->def('show_pagination', 2) == 1  || ($this->params->get('show_pagination') == 2 && $this->pagination->pagesTotal > 1)) : ?>
-	<div class="pagination">
+	<div class="pag_block">
+		<div class="pages">
+			<div class="wraper_ul">
+				<?php echo $this->pagination->getPagesLinks(); ?>
+			</div><!-- class="wraper_ul" -->
+		</div><!-- end class="pages" -->
+	</div><!-- end class="pag_block" -->
 
 		<?php if ($this->params->def('show_pagination_results', 1)) : ?>
-			<p class="counter pull-right">
+			<div class="pagination_count">
 				<?php echo $this->pagination->getPagesCounter(); ?>
-			</p>
+			</div>
 		<?php  endif; ?>
-				<?php echo $this->pagination->getPagesLinks(); ?>
-	</div>
+				
 <?php endif; ?>

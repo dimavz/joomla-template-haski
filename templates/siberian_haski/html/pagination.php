@@ -109,11 +109,11 @@ function pagination_item_active($item)
 
 function pagination_item_inactive($item)
 {
-	$html ='';
-	$end = JText::sprintf('JLIB_HTML_END');
-	$start = JText::sprintf('JLIB_HTML_START');
-	$next = JText::sprintf('JNEXT');
-	$prev = JText::sprintf('JPREV');
+	$html 	= '';
+	$end 		= JText::sprintf('JLIB_HTML_END');
+	$start 	= JText::sprintf('JLIB_HTML_START');
+	$next 	= JText::sprintf('JNEXT');
+	$prev 	= JText::sprintf('JPREV');
 
 	if(isset($item->active)&& $item->active )
 	{
