@@ -33,7 +33,7 @@ if ($doc->countModules('position-7'))
 }
 
 //scripts
-//$doc->addScript(JUri::base().'templates/'.$doc->template.'/libs/jquery/jquery-1.11.1.min.js');
+$doc->addScript(JUri::base().'templates/'.$doc->template.'/libs/jquery/jquery-1.11.1.min.js');
 $doc->addScript(JUri::base().'templates/'.$doc->template.'/js/common.js');
 
 
