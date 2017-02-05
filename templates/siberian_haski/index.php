@@ -20,9 +20,6 @@ $doc->addStyleSheet(JUri::base().'templates/'.$doc->template.'/css/font-awesome.
 $doc->addStyleSheet(JUri::base().'templates/'.$doc->template.'/css/custom.css');
 $doc->addStyleSheet(JUri::base().'templates/'.$doc->template.'/css/main.css');
 $doc->addStyleSheet(JUri::base().'templates/'.$doc->template.'/css/media.css');
-
-
-
 $doc->addStyleSheet(JUri::base().'templates/'.$doc->template.'/favicon.png');
 
 if ($doc->countModules('position-5'))
@@ -35,9 +32,10 @@ if ($doc->countModules('position-7'))
 	$showSlider = TRUE;
 }
 
-
 //scripts
+//$doc->addScript(JUri::base().'templates/'.$doc->template.'/libs/jquery/jquery-1.11.1.min.js');
 //$doc->addScript(JUri::base().'templates/'.$doc->template.'/js/common.js');
+
 
 ?>
 
@@ -348,11 +346,14 @@ if ($doc->countModules('position-7'))
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/js/bootstrap.min.js"></script>
-	<!-- <script src="libs/jquery/jquery-1.11.1.min.js"></script> -->
-	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+
+  <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/jquery/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/js/common.js"></script>
+
+  <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/waypoints/waypoints-1.6.2.min.js"></script>
 	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/scrollto/jquery.scrollTo.min.js"></script>
@@ -361,7 +362,7 @@ if ($doc->countModules('position-7'))
 	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/countdown/jquery.countdown.min.js"></script>
 	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/countdown/jquery.countdown-ru.js"></script>
 	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/landing-nav/navigation.js"></script>
-	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/js/common.js"></script>
+	
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
