@@ -965,4 +965,78 @@ class modSlideshowckHelper {
 		return $value . 'px';
 	}
 
+	/*
+	 * Make empty slide object
+	 */
+	public static function initItem() {
+		$item = new stdClass();
+		$item->imgname = null;
+		$item->imgthumb = null;
+		$item->imgvideo = null;
+		$item->slideselect = null;
+		$item->imgcaption = null;
+		$item->article = new stdClass();
+		$item->slidearticleid = null;
+		$item->imgalignment = null;
+		$item->imgtarget = 'default';
+		$item->imgtime = null;
+		$item->imglink = null;
+		$item->imgtitle = null;
+		$item->article->title = null;
+		$item->article->text = null;
+
+		return $item;
+	}
+
+	/**
+	 * Get a subtring with the max word setting
+	 *
+	 * @param string $text;
+	 * @param int $length limit characters showing;
+	 * @param string $replacer;
+	 * @return tring;
+	 */
+
+	public static function substrword($text, $length = 100, $replacer = '...', $isStrips = true, $stringtags = '') {
+		if($isStrips){
+			$text = preg_replace('/\<p.*\>/Us','',$text);
+			$text = str_replace('</p>','<br/>',$text);
+			$text = strip_tags($text, $stringtags);
+		}
+		$tmp = explode(" ", $text);
+
+		if (count($tmp) < $length)
+			return $text;
+
+		$text = implode(" ", array_slice($tmp, 0, $length)) . $replacer;
+
+		return $text;
+	}
+
+	/**
+	 * Get a subtring with the max length setting.
+	 *
+	 * @param string $text;
+	 * @param int $length limit characters showing;
+	 * @param string $replacer;
+	 * @return tring;
+	 */
+	public static function substring($text, $length = 100, $replacer = '...', $isStrips = true, $stringtags = '') {
+	
+		if($isStrips){
+			$text = preg_replace('/\<p.*\>/Us','',$text);
+			$text = str_replace('</p>','<br/>',$text);
+			$text = strip_tags($text, $stringtags);
+		}
+		
+		if(function_exists('mb_strlen')){
+			if (mb_strlen($text) < $length)	return $text;
+			$text = mb_substr($text, 0, $length);
+		}else{
+			if (strlen($text) < $length)	return $text;
+			$text = substr($text, 0, $length);
+		}
+		
+		return $text . $replacer;
+	}
 }
