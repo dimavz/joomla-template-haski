@@ -303,8 +303,7 @@ if ($doc->countModules('position-7'))
 		</footer>
 		<div class="hidden">
 			<form action="" id="login" class="login_form">
-			<jdoc:include type="modules" name="position-0" style="autorisation" />
-				<!-- <h3>Вход на сайт</h3>
+				<h3>Вход на сайт</h3>
 				<div class="form-group has-success has-feedback">
 					<label for="inputEmail" class="col-sm-3 control-label">Email</label>
 					<div class="col-sm-10">
@@ -330,7 +329,7 @@ if ($doc->countModules('position-7'))
 					<div class="col-sm-offset-2 col-sm-10">
 						<button type="submit" class="btn btn-info">Войти</button>
 					</div>
-				</div> -->
+				</div>
 			</form>
 			<form id="register" class="form-horizontal" role="form">
 				<div class="form-group has-success has-feedback">
