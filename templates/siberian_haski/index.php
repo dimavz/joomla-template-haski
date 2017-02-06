@@ -33,8 +33,13 @@ if ($doc->countModules('position-7'))
 }
 
 //scripts
-$doc->addScript(JUri::base().'templates/'.$doc->template.'/libs/jquery/jquery-1.11.1.min.js');
-$doc->addScript(JUri::base().'templates/'.$doc->template.'/js/common.js');
+//$doc->addScript(JUri::base().'templates/'.$doc->template.'/libs/jquery/jquery-1.11.1.min.js');
+//$doc->addScript(JUri::base().'templates/'.$doc->template.'/js/common.js');
+
+unset($doc->_scripts[JURI::root(true). '/media/jui/js/jquery.min.js']);
+unset($doc->_scripts[JURI::root(true). '/media/jui/js/jquery-migrate.min.js']);
+unset($doc->_scripts[JURI::root(true). '/media/jui/js/jquery-noconflict.js']);
+unset($doc->_scripts[JURI::root(true). '/media/jui/js/bootstrap.min.js']);
 
 
 ?>
@@ -346,12 +351,12 @@ $doc->addScript(JUri::base().'templates/'.$doc->template.'/js/common.js');
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <!-- Include all compiled plugins (below), or include individual files as needed -->
 
-  <!-- <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/jquery/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/js/common.js"></script> -->
-  <!-- <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/js/bootstrap.min.js"></script> -->
+  <!-- <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/jquery/jquery-1.11.1.min.js"></script> -->
+  <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/js/common.js"></script>
+  <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>  
 	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script type="text/javascript" src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/libs/waypoints/waypoints-1.6.2.min.js"></script>
