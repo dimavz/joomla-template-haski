@@ -1,26 +1,26 @@
-jQuery(document).ready(function() {
-	/* jQuery(".auth_button").click(function(){
-		jQuery(this).next().slideToggle();
+$(document).ready(function() {
+	/* $(".auth_button").click(function(){
+		$(this).next().slideToggle();
 	}); */
 
-	jQuery(".main_menu_bt").click(function(){
-		jQuery(".main_menu ul").slideToggle();
+	$(".main_menu_bt").click(function(){
+		$(".main_menu ul").slideToggle();
 	});
 
-	jQuery(".auth_button").click(function(){
-		jQuery(".top_links").slideToggle();
+	$(".auth_button").click(function(){
+		$(".top_links").slideToggle();
 	});
 
-	jQuery(".add_ad").click(function(){
-		jQuery(".footer_left_block ul").slideToggle();
+	$(".add_ad").click(function(){
+		$(".footer_left_block ul").slideToggle();
 	});
 
-	jQuery(".reclama").click(function(){
-		jQuery(".rec_content").slideToggle();
+	$(".reclama").click(function(){
+		$(".rec_content").slideToggle();
 	});
 
-	jQuery(".contacts").click(function(){
-		jQuery(".contacts_content").slideToggle();
+	$(".contacts").click(function(){
+		$(".contacts_content").slideToggle();
 	});
 
 	
@@ -28,41 +28,41 @@ jQuery(document).ready(function() {
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
 	//<div class="countdown" date-time="2015-01-07"></div>
-	var austDay = new Date(jQuery(".countdown").attr("date-time"));
-	jQuery(".countdown").countdown({until: austDay, format: 'yowdHMS'});
+	var austDay = new Date($(".countdown").attr("date-time"));
+	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
 
 	//Попап менеджер FancyBox
 	//Документация: http://fancybox.net/howto
 	//<a class="fancybox"><img src="image.jpg" /></a>
 	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
-	jQuery(".fancybox").fancybox();
+	$(".fancybox").fancybox();
 
 	//Навигация по Landing Page
-	//jQuery(".top_mnu") - это верхняя панель со ссылками.
+	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
-	//jQuery(".top_mnu").navigation();
+	//$(".top_mnu").navigation();
 
 	//Добавляет классы дочерним блокам .block для анимации
-	//Документация: http://imakewebthings.com/jquery-waypoints/
-	jQuery(".block").waypoint(function(direction) {
+	//Документация: http://imakewebthings.com/$-waypoints/
+	$(".block").waypoint(function(direction) {
 		if (direction === "down") {
-			jQuery(".class").addClass("active");
+			$(".class").addClass("active");
 		} else if (direction === "up") {
-			jQuery(".class").removeClass("deactive");
+			$(".class").removeClass("deactive");
 		};
 	}, {offset: 100});
 
 	//Плавный скролл до блока .div по клику на .scroll
-	//Документация: https://github.com/flesler/jquery.scrollTo
-	jQuery("a.scroll").click(function() {
-		$.scrollTo(jQuery(".div"), 800, {
+	//Документация: https://github.com/flesler/$.scrollTo
+	$("a.scroll").click(function() {
+		$.scrollTo($(".div"), 800, {
 			offset: -90
 		});
 	});
 
 	//Каруселька
 	//Документация: http://owlgraphic.com/owlcarousel/
-	var owl = jQuery(".carousel");
+	var owl = $(".carousel");
 	owl.owlCarousel({
 		items : 3,
 		autoHeight: true,
@@ -80,31 +80,31 @@ jQuery(document).ready(function() {
 		}
 		e.preventDefault();
 	});
-	jQuery(".next_button").click(function(){
+	$(".next_button").click(function(){
 		owl.trigger("owl.next");
 	});
-	jQuery(".prev_button").click(function(){
+	$(".prev_button").click(function(){
 		owl.trigger("owl.prev");
 	});
 
 	//Кнопка "Наверх"
 	//Документация:
-	//http://api.jquery.com/scrolltop/
-	//http://api.jquery.com/animate/
-	jQuery("#top").click(function () {
-		jQuery("body, html").animate({
+	//http://api.$.com/scrolltop/
+	//http://api.$.com/animate/
+	$("#top").click(function () {
+		$("body, html").animate({
 			scrollTop: 0
 		}, 800);
 		return false;
 	});
 	
 	//Аякс отправка форм
-	//Документация: http://api.jquery.com/jquery.ajax/
-	jQuery("form").submit(function() {
+	//Документация: http://api.$.com/$.ajax/
+	$("form").submit(function() {
 		$.ajax({
 			type: "GET",
 			url: "mail.php",
-			data: jQuery("form").serialize()
+			data: $("form").serialize()
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
