@@ -177,13 +177,14 @@ unset($doc->_scripts[JURI::root(true). '/media/jui/js/bootstrap.min.js']);
 				</div>
 				<div class="row">
 					<div class="col-md-9 col-md-push-3">
-						<div class="slider_container"><!-- Блок слайдера -->
-							<div class="carousel">
-								<?php if(showSlider) :?>
-										<jdoc:include type="modules" name="position-7" />
-								<?php endif;?>
-							</div>
-						</div><!-- Конец Блока слайдера -->
+						<?php if(showSlider) :?>
+							<div class="slider_container"><!-- Блок слайдера -->
+								<div class="carousel">
+									<jdoc:include type="modules" name="position-7" />
+								</div>
+							</div><!-- Конец Блока слайдера -->
+						<?php endif;?>
+							
 						<div class="conteiner">
 							<div class="row">
 								<?php if($doc->countModules('position-8')) :?>
