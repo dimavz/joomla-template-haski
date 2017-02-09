@@ -69,7 +69,7 @@ $(document).ready(function() {
 		autoPlay: 3000,
 		stopOnHover: true,
 		paginationSpeed : 1000,
-		singleItem:false
+		singleItem:true
 
 	});
 	owl.on("mousewheel", ".owl-wrapper", function (e) {
