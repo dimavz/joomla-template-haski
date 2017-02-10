@@ -687,11 +687,11 @@ section.content{
 	color: white;
 	display: block;
 	float: left;
-	margin-left: 10px;
+	margin-left: 5px;
 	padding-left: 10px;
 	padding-right: 15px;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding-top: 1px;
+	padding-bottom: 1px;
 	background-color: #0fc3bd;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -703,4 +703,66 @@ section.content{
 
 .tags li.tag a{
 	color: white;
+}
+
+.tag-count {
+  background-color: #ec971f;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 5px;
+  min-width: 20px;
+  max-width: 30px;
+  padding: 7px;
+  text-align: center;
+}
+
+.body_tags{
+	display: block;
+	background-color: white;
+	margin: -1px 10px;
+	padding: 15px;
+	border: 1px solid #3797bf;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.body_tags > ul.tags{
+	display: inline-block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.body_tags .tags li.tag{
+	color: white;
+	display: block;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 5px ;
+	padding-left: 0px;
+	padding-right: 5px;
+	padding-top: 0px;
+	padding-bottom: 1px;
+	background-color: #0fc3bd;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border: 1px solid #24f7f5;
+}
+
+.body_tags .tags li.tag:hover{
+	background-color: #3779BF;
+}
+
+.body_tags .tags li.tag a{
+	color: white;
+	padding-left: 10px;
+	border: none;
+}
+
+.body_tags .tags li.tag a:hover !important{
+	background-color: #3779BF;
 }
