@@ -53,8 +53,18 @@ function pagination_list_render($list){
     }    
     if(isset($list['pages'][$current+1]))
     {
-    	 $html .= $list['pages'][$current+1]['data'];
-    	 $html .= $list['next']['data'];
+    	 if(isset($list['pages'][$current+2]))
+    		{
+    			$html .= $list['pages'][$current+1]['data'];
+    			$html .= $list['pages'][$current+2]['data'];
+    	 		$html .= $list['next']['data'];
+    		}
+    		else
+    		{
+    			$html .= $list['pages'][$current+1]['data'];
+    	 		$html .= $list['next']['data'];
+    		}
+    	 
     } 
     // if($current < ($countPages - 1)) //
     // {
