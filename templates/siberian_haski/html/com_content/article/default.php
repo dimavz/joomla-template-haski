@@ -132,7 +132,7 @@ JHtml::_('behavior.caption');
 			<?php echo JLayoutHelper::render('joomla.content.info_block.block2', array('item' => $this->item, 'params' => $params, 'position' => 'below')); ?>
 		<?php endif; ?>
 		<?php if ($params->get('show_tags', 1) && !empty($this->item->tags->itemTags)) : ?>
-			<?php $this->item->tagLayout = new JLayoutFile('joomla.content.tags'); ?>
+			<?php $this->item->tagLayout = new JLayoutFile('joomla.content.tags2'); ?>
 			<?php echo $this->item->tagLayout->render($this->item->tags->itemTags); ?>
 		<?php endif; ?>
 	<?php endif; ?>
