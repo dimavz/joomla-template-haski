@@ -177,18 +177,6 @@ unset($doc->_scripts[JURI::root(true). '/media/jui/js/bootstrap.min.js']);
 				</div>
 				<div class="row">
 					<div class="col-md-9 col-md-push-3">
-					<div class="slider_container"><!-- Блок слайдера -->
-							<div class="carousel"> 
-								<div class="slide_item"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/images/slider/slide_1.jpg" class="img-thumbnail" alt="слайд"></div>
-								<div class="slide_item"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/images/slider/slide_2.jpg" class="img-thumbnail" alt="слайд"></div>
-								<div class="slide_item"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/images//slider/slide_3.jpg" class="img-thumbnail" alt="слайд"></div>
-								<div class="slide_item"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/images//slider/slide_1.jpg" class="img-thumbnail" alt="слайд"></div>
-								<div class="slide_item"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/images//slider/slide_2.jpg" class="img-thumbnail" aclass="img-thumbnail" lt="слайд"></div>
-								<div class="slide_item"><img src="<?php echo JUri::base();?>templates/<?php echo $doc->template; ?>/images//slider/slide_3.jpg" class="img-thumbnail" alt="слайд"></div>
-							</div>
-							<button class="prev_button btn"><i class="fa fa-angle-left fa-2x" aria-hidden="true"></i></button>
-							<button class="next_button btn"><i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></button>
-						</div>
 						<?php if(showSlider) :?>
 							<div class="slider_container"><!-- Блок слайдера -->
 								<div class="carousel">
